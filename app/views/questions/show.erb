@@ -1,0 +1,8 @@
+		<li>
+			<% question.answers.each do |answer| %> 
+			<ul>
+				<li>Answer: <%= answer.body %></li>
+				<li>Answer Author: <%= answer.user.username %></li>
+			</ul>
+			<% end %>
+		</li>

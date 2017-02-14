@@ -1,0 +1,10 @@
+<h3>Welcome Page (Question Index) </h3>
+
+<table border=1 frame=void rules=rows>
+	<% @questions.each do |question| %>
+		<tr class="question">
+			<td><%= question.body %></td>
+			<td><%= question.user.username %></td>
+		</tr>
+	<% end %>
+</table>
